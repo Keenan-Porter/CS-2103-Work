@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="41e06ac8-909d-491b-9d99-b8e67d30fa86" name="Changes" comment="Starter code of Project 1 for CS 2103">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="41e06ac8-909d-491b-9d99-b8e67d30fa86" name="Changes" comment="Two keys are now present with thread of modulo second time">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project1/Piano.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project1/Piano.java" afterDir="false" />
     </list>
@@ -95,7 +94,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666833579336</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Two keys are now present with thread of modulo">
+      <created>1666849085883</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1666849085883</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Two keys are now present with thread of modulo second time">
+      <created>1666849166516</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1666849166516</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -111,6 +124,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Starter code of Project 1 for CS 2103" />
-    <option name="LAST_COMMIT_MESSAGE" value="Starter code of Project 1 for CS 2103" />
+    <MESSAGE value="Two keys are now present with thread of modulo" />
+    <MESSAGE value="Two keys are now present with thread of modulo second time" />
+    <option name="LAST_COMMIT_MESSAGE" value="Two keys are now present with thread of modulo second time" />
   </component>
 </project>

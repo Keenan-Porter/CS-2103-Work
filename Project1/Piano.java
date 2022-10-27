@@ -82,7 +82,7 @@ public class Piano extends JPanel {
 		// Just as an example, this draws the left-most black key at its proper position.
 		int x1 = WHITE_KEY_WIDTH - BLACK_KEY_WIDTH/2;
 		int x2 = WHITE_KEY_WIDTH + BLACK_KEY_WIDTH/2;
-		for(int i=0; i<2; i++) {
+		for(int i=0; i<NUM_WHITE_KEYS; i++) {
 			int[] xCoords = new int[] {
 					x1,
 					x2,
@@ -94,15 +94,16 @@ public class Piano extends JPanel {
 					0,
 					BLACK_KEY_HEIGHT,
 					BLACK_KEY_HEIGHT
-
 			};
 			Polygon polygon = new Polygon(xCoords, yCoords, xCoords.length);
 			Key key = new Key(polygon, START_PITCH, this);
 
 			// Add this key to the list of keys so that it gets painted.
-			_keys.add(key);
-			x1 = x1 + WHITE_KEY_WIDTH;
-			x2 = x2 + WHITE_KEY_WIDTH;
+			if ( !(i % NUM_WHITE_KEYS_PER_OCTAVE == 6 || i % NUM_WHITE_KEYS_PER_OCTAVE == 2)) {
+				_keys.add(key);
+			}
+			x1 += WHITE_KEY_WIDTH;
+			x2 += WHITE_KEY_WIDTH;
 		}
 		/**
 		int[] xCoords = new int[] {
