@@ -39,6 +39,24 @@ class PianoTester {
 		// should cause the key to be turned on only once, not multiple times.
 		// Use makeMouseEvent and TestReceiver.getKeyOnCount.
 		// TODO complete me
+		_mouseListener.mousePressed(makeMouseEvent(0, 0));
+		_mouseListener.mouseDragged(makeMouseEvent(10,140));
+		assertEquals(_receiver.getKeyOnCount(48),1);
+	}
+
+	@Test
+	void testDragOutsideKey () {
+		// Test that pressing and dragging the mouse to another key
+		_mouseListener.mousePressed(makeMouseEvent(0,0));
+		_mouseListener.mouseDragged(makeMouseEvent(40,140));
+		assertTrue(_receiver.isKeyOn(50));
+	}
+
+	@Test
+	void testKeyEdge () {
+		// Test that pressing out of the window does not activate any keys
+		_mouseListener.mousePressed(makeMouseEvent(Piano.WHITE_KEY_WIDTH, Piano.BLACK_KEY_HEIGHT));
+		assertTrue(_receiver.isKeyOn(50));
 	}
 
 	// TODO write at least 3 more tests!

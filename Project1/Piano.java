@@ -24,6 +24,9 @@ public class Piano extends JPanel {
 	private Receiver _receiver;
 	private PianoMouseListener _mouseListener;
 
+	//Ghost key: Halloween special!! It makes all the math conveniently work and makes the program more efficient.
+	public Key NULL_KEY = new Key(new Polygon(new int[]{}, new int[]{}, 0), 0, this, Color.WHITE);
+
 	/**
 	 * Returns the list of keys in the piano.
 	 * @return the list of keys.
@@ -79,52 +82,46 @@ public class Piano extends JPanel {
 	 * add them to the _keys array.
 	 */
 	private void makeKeys () {
-		// Just as an example, this draws the left-most black key at its proper position.
-		int x1 = WHITE_KEY_WIDTH - BLACK_KEY_WIDTH/2;
-		int x2 = WHITE_KEY_WIDTH + BLACK_KEY_WIDTH/2;
-		for(int i=0; i<NUM_WHITE_KEYS; i++) {
-			int[] xCoords = new int[] {
-					x1,
-					x2,
-					x2,
-					x1
-			};
-			int[] yCoords = new int[] {
-					0,
-					0,
-					BLACK_KEY_HEIGHT,
-					BLACK_KEY_HEIGHT
-			};
-			Polygon polygon = new Polygon(xCoords, yCoords, xCoords.length);
-			Key key = new Key(polygon, START_PITCH, this);
+		int bKeyOffset = BLACK_KEY_WIDTH/2;
+		int currentPitch = START_PITCH;
+		int xWhite = 0;
 
-			// Add this key to the list of keys so that it gets painted.
-			if ( !(i % NUM_WHITE_KEYS_PER_OCTAVE == 6 || i % NUM_WHITE_KEYS_PER_OCTAVE == 2)) {
-				_keys.add(key);
+		addWhiteKey(xWhite, currentPitch);
+		for(int i=1; i < NUM_WHITE_KEYS; i++){
+			xWhite = WHITE_KEY_WIDTH*i;
+
+			currentPitch++;
+
+			if(!(i % NUM_WHITE_KEYS_PER_OCTAVE == 3 || i % NUM_WHITE_KEYS_PER_OCTAVE == 0)){
+				addKey(xWhite, xWhite + WHITE_KEY_WIDTH, WHITE_KEY_HEIGHT, currentPitch+1);
+				addKey(xWhite - bKeyOffset,
+						xWhite + bKeyOffset,
+						BLACK_KEY_HEIGHT, currentPitch);
+				currentPitch++;
+			} else{
+				addWhiteKey(xWhite, currentPitch);
 			}
-			x1 += WHITE_KEY_WIDTH;
-			x2 += WHITE_KEY_WIDTH;
 		}
-		/**
-		int[] xCoords = new int[] {
-			WHITE_KEY_WIDTH - BLACK_KEY_WIDTH/2,
-			WHITE_KEY_WIDTH + BLACK_KEY_WIDTH/2,
-			WHITE_KEY_WIDTH + BLACK_KEY_WIDTH/2,
-			WHITE_KEY_WIDTH - BLACK_KEY_WIDTH/2
-		};
-		int[] yCoords = new int[] {
-			0,
-			0,
-			BLACK_KEY_HEIGHT,
-			BLACK_KEY_HEIGHT
+	}
 
-		};
-		Polygon polygon = new Polygon(xCoords, yCoords, xCoords.length);
-		Key key = new Key(polygon, START_PITCH, this);
 
-		// Add this key to the list of keys so that it gets painted.
-		_keys.add(key);
-		 */
+	private void addWhiteKey(int x, int pitch){
+		addKey(x, x + WHITE_KEY_WIDTH, WHITE_KEY_HEIGHT, pitch);
+		_keys.add(NULL_KEY);
+	}
+
+	/**
+	 * adds the key with the specified x coords, height, and pitch to the _keys array
+	 * @param x1 top left x coordinate
+	 * @param x2 top right x coordinate
+	 * @param height height of key, also determines color of the key
+	 * @param pitch
+	 */
+	private void addKey(int x1, int x2, int height, int pitch){
+		Polygon polygon = new Polygon(new int[]{x1, x2, x2, x1},
+									  new int[]{0, 0, height, height},
+							  4);
+		_keys.add(new Key(polygon, pitch, this, (height == BLACK_KEY_HEIGHT ? Color.BLACK : Color.WHITE)));
 	}
 
 	// DO NOT MODIFY THIS METHOD.

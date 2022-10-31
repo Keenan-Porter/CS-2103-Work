@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41e06ac8-909d-491b-9d99-b8e67d30fa86" name="Changes" comment="All Keys rendered through modulo">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CS-2103.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CS-2103.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project1/PianoMouseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project1/PianoMouseListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project1/PianoTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project1/PianoTester.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +43,7 @@
       <recent name="C:\Users\Keenan\CS-2103\Project1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Band">
+  <component name="RunManager">
     <configuration name="Band" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Band" />
       <module name="CS-2103" />
@@ -61,6 +61,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PianoTester.testDragOutsideKey" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CS-2103" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PianoTester" />
+      <option name="METHOD_NAME" value="testDragOutsideKey" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PianoTester.testDragWithinKey" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS-2103" />
       <option name="PACKAGE_NAME" value="" />
@@ -71,11 +81,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PianoTester.testKeyEdge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CS-2103" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PianoTester" />
+      <option name="METHOD_NAME" value="testKeyEdge" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Band" />
-        <item itemvalue="JUnit.PianoTester.testClickUpperLeftMostPixel" />
+        <item itemvalue="JUnit.PianoTester.testKeyEdge" />
+        <item itemvalue="JUnit.PianoTester.testDragOutsideKey" />
         <item itemvalue="JUnit.PianoTester.testDragWithinKey" />
+        <item itemvalue="JUnit.PianoTester.testClickUpperLeftMostPixel" />
       </list>
     </recent_temporary>
   </component>

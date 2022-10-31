@@ -13,7 +13,11 @@ public class Key {
 	private int _pitch;
 	private boolean _isOn;
 	private Piano _piano;
+	private Color _keyColor;
 
+	public int get_pitch(){
+		return _pitch;
+	}
 	/**
 	 * Returns the polygon associated with this key.
 	 * @return the polygon associated with this key.
@@ -27,11 +31,13 @@ public class Key {
 	 * @param polygon the Polygon that describes the shape and position of this key.
 	 * @param pitch the pitch value of the key.
 	 * @param piano the Piano associated with this key.
+	 * @param c the color of the key.
 	 */
-	public Key (Polygon polygon, int pitch, Piano piano) {
+	public Key (Polygon polygon, int pitch, Piano piano, Color c) {
 		_polygon = polygon;
 		_pitch = pitch;
 		_piano = piano;
+		_keyColor = c;
 	}
 
 	// DO NOT MODIFY THIS METHOD.
@@ -65,8 +71,14 @@ public class Key {
 	public void paint (Graphics g) {
 		// TODO: Change this to handle the different key colors
 		// and different key states (pressed down or not).
+		if(_isOn){
+			g.setColor(Color.GRAY);
+			g.fillPolygon(_polygon);
+		} else{
+			g.setColor(_keyColor);
+			g.fillPolygon(_polygon);
+		}
 		g.setColor(Color.BLACK);
-		g.fillPolygon(_polygon);
 		g.drawPolygon(_polygon);
 	}
 
