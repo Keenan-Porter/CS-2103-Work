@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41e06ac8-909d-491b-9d99-b8e67d30fa86" name="Changes" comment="All Keys rendered through modulo">
+      <change afterPath="$PROJECT_DIR$/Project2.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project1/PianoMouseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project1/PianoMouseListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project1/PianoTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project1/PianoTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CS-2103.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CS-2103.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project2/IMDBGraphImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project2/IMDBGraphImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,19 +14,22 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Project1" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Project2" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2Gh7AWKzvuXpigVG7BafrWgzhhr" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
     &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
     &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
@@ -43,7 +48,7 @@
       <recent name="C:\Users\Keenan\CS-2103\Project1" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Band">
     <configuration name="Band" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Band" />
       <module name="CS-2103" />
@@ -51,41 +56,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PianoTester.testClickUpperLeftMostPixel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PianoTester" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS-2103" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="PianoTester" />
-      <option name="METHOD_NAME" value="testClickUpperLeftMostPixel" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PianoTester.testKeys" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CS-2103" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PianoTester" />
+      <option name="METHOD_NAME" value="testKeys" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PianoTester.testDragOutsideKey" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PianoTester.testWhiteLowerRightEdge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS-2103" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="PianoTester" />
-      <option name="METHOD_NAME" value="testDragOutsideKey" />
+      <option name="METHOD_NAME" value="testWhiteLowerRightEdge" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PianoTester.testDragWithinKey" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PianoTester.testWhiteRightLeftEdge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS-2103" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="PianoTester" />
-      <option name="METHOD_NAME" value="testDragWithinKey" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PianoTester.testKeyEdge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CS-2103" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PianoTester" />
-      <option name="METHOD_NAME" value="testKeyEdge" />
+      <option name="METHOD_NAME" value="testWhiteRightLeftEdge" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -94,10 +98,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Band" />
-        <item itemvalue="JUnit.PianoTester.testKeyEdge" />
-        <item itemvalue="JUnit.PianoTester.testDragOutsideKey" />
-        <item itemvalue="JUnit.PianoTester.testDragWithinKey" />
-        <item itemvalue="JUnit.PianoTester.testClickUpperLeftMostPixel" />
+        <item itemvalue="JUnit.PianoTester" />
+        <item itemvalue="JUnit.PianoTester.testWhiteLowerRightEdge" />
+        <item itemvalue="JUnit.PianoTester.testKeys" />
+        <item itemvalue="JUnit.PianoTester.testWhiteRightLeftEdge" />
       </list>
     </recent_temporary>
   </component>
@@ -153,6 +157,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Starter code of Project 1 for CS 2103" />
     <MESSAGE value="Two keys are now present with thread of modulo" />
     <MESSAGE value="Two keys are now present with thread of modulo second time" />
