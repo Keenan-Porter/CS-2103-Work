@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="41e06ac8-909d-491b-9d99-b8e67d30fa86" name="Changes" comment="All Keys rendered through modulo">
-      <change afterPath="$PROJECT_DIR$/Project2.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="41e06ac8-909d-491b-9d99-b8e67d30fa86" name="Changes" comment="Project 2 started, older files, needs actor processor, and graph search">
+      <change afterPath="$PROJECT_DIR$/Project3.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project3/Event.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project3/Heap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project3/HeapImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project3/HeapTester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project3/Particle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project3/ParticleSimulator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project3/particlesInitial.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project3/particles_a_end.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project3/particles_a_start.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project3/particles_b_end.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project3/particles_b_start.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CS-2103.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CS-2103.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project2/IMDBGraphImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project2/IMDBGraphImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project2/GraphSearchEngineImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project2/GraphSearchEngineImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,7 +24,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Project2" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -48,10 +58,29 @@
       <recent name="C:\Users\Keenan\CS-2103\Project1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Band">
+  <component name="RunManager" selected="JUnit.GraphSearchEngineTester.testShortestPath1">
     <configuration name="Band" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Band" />
       <module name="CS-2103" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GraphSearchEngineTester" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CS-2103" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GraphSearchEngineTester" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GraphSearchEngineTester.testShortestPath1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CS-2103" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GraphSearchEngineTester" />
+      <option name="METHOD_NAME" value="testShortestPath1" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -61,16 +90,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="PianoTester" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PianoTester.testKeys" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CS-2103" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PianoTester" />
-      <option name="METHOD_NAME" value="testKeys" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -85,23 +104,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PianoTester.testWhiteRightLeftEdge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CS-2103" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PianoTester" />
-      <option name="METHOD_NAME" value="testWhiteRightLeftEdge" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GraphSearchEngineTester.testShortestPath1" />
+        <item itemvalue="JUnit.GraphSearchEngineTester" />
         <item itemvalue="Application.Band" />
         <item itemvalue="JUnit.PianoTester" />
         <item itemvalue="JUnit.PianoTester.testWhiteLowerRightEdge" />
-        <item itemvalue="JUnit.PianoTester.testKeys" />
-        <item itemvalue="JUnit.PianoTester.testWhiteRightLeftEdge" />
       </list>
     </recent_temporary>
   </component>
@@ -142,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666850450897</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Project 2 started, older files, needs actor processor, and graph search">
+      <created>1668229316987</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668229316987</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -162,6 +178,7 @@
     <MESSAGE value="Two keys are now present with thread of modulo" />
     <MESSAGE value="Two keys are now present with thread of modulo second time" />
     <MESSAGE value="All Keys rendered through modulo" />
-    <option name="LAST_COMMIT_MESSAGE" value="All Keys rendered through modulo" />
+    <MESSAGE value="Project 2 started, older files, needs actor processor, and graph search" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project 2 started, older files, needs actor processor, and graph search" />
   </component>
 </project>
